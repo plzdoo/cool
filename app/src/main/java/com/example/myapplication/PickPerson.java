@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class PickPerson extends AppCompatActivity {
-    Button zuck = findViewById(R.id.custom_button);
+    Button zuck = findViewById(R.id.zuck_button);
     public void sendMessage(View view) {
         Intent intent = new Intent(view.getContext(), ZuckMoney.class);
         startActivityForResult(intent, 0);

@@ -5,15 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:background="@drawable/dark_background">
 
     <Button
-        android:id="@+id/custom_button"
-        android:layout_width="152dp"
-        android:layout_height="82dp"
-        android:background="@drawable/button_zuck_default"
-        android:onClick="sendMessage" />
+        android:id="@+id/jeff_button"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/jeff"
+        android:translationX="120dp"
+        android:translationY="310dp" />
 
+    <Button
+        android:id="@+id/geoffery_button"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/geoffery"
+        android:translationX="120dp"
+        android:translationY="-100dp" />
+
+    <Button
+        android:id="@+id/zuck_button"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/zuck_button"
+        android:translationX="-120dp"
+        android:translationY="-240dp" />
+
+    <Button
+        android:id="@+id/jackma_button"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/jackma_button"
+        android:translationX="-130dp"
+        android:translationY="-140dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="choose one billionaire you like!!"
+        android:textColor="#E5E1EC"
+        android:textSize="36sp" />
 
 </LinearLayout>
