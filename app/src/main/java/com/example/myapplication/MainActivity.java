@@ -13,15 +13,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button startB = findViewById(R.id.startButton);
+        Button load = findViewById(R.id.loadGame);
+        startB.setOnClickListener(unused -> {
+            Intent intent = new Intent(MainActivity.this, PickPerson.class);
+            startActivity(intent);
+        });
+        load.setOnClickListener(unused -> {
+            Intent intent = new Intent(MainActivity.this, loadGame.class);
+            startActivity(intent);
+        });
+        Button exit = findViewById(R.id.quitGame);
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
     }
-    Button startB = (Button) findViewById(R.id.startButton);
-
-    public void sendMessage(View view) {
-        Intent intent = new Intent(view.getContext(), PickPerson.class);
-        startActivityForResult(intent, 0);
-        // Do something in response to button click
-    }
-    Button load = findViewById(R.id.loadGame);
     public void sendMessage1(View view) {
 
     }
