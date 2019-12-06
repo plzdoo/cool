@@ -2,9 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -23,6 +21,14 @@ public class PickPerson extends AppCompatActivity {
         });
         geoffery.setOnClickListener(unused -> {
             Intent intent = new Intent(PickPerson.this, geofferyMoney.class);
+            startActivity(intent);
+        });
+        jeff.setOnClickListener(unused -> {
+            Intent intent = new Intent(PickPerson.this, jeffMoney.class);
+            startActivity(intent);
+        });
+        jack.setOnClickListener(unused -> {
+            Intent intent = new Intent(PickPerson.this, jackMoney.class);
             startActivity(intent);
         });
 

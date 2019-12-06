@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_weight="1"
+        android:text="at least i can buy you a warm seat in Foelinger..." />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</ScrollView>
