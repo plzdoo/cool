@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,14 +14,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <TextView
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="newShit"
-            android:textSize="33dp"
-            android:layout_centerInParent="true"
-            />
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/jackma" />
 
+        <TextView
+            android:id="@+id/moneyBox"
+            android:layout_width="152dp"
+            android:layout_height="136dp"
+            android:text="TextView"
+            android:translationX="235dp"
+            android:translationY="0dp" />
     </RelativeLayout>
 
     <GridLayout
@@ -31,53 +38,109 @@
         android:columnCount="2"
         android:columnOrderPreserved="false">
         <!--Card 1-->
-        <android.support.v7.widget.CardView
-            android:layout_width="0dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="164dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"
-            >
-        </android.support.v7.widget.CardView>
+            android:layout_columnWeight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lambo" />
+
+            <TextView
+                android:id="@+id/cost1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="200,000 USD"
+                android:translationX="0dp"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
 
         <!--Card 2-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="182dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"></android.support.v7.widget.CardView>
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="200dp"
+                android:layout_height="143dp"
+                app:srcCompat="@drawable/richmille" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="120,000,000USD"
+                android:translationX="0dp"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
 
         <!--Card 3-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             >
-        </android.support.v7.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="144dp"
+                app:srcCompat="@drawable/manor" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100,000,000USD"
+                android:translationX="0dp"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
 
         <!--Card 4-->
-        <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"
-            >
-        </android.support.v7.widget.CardView>
 
         <!--Card 5-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/diomond" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50,000USD"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -86,10 +149,23 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             >
-        </android.support.v7.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/blizzard" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:text="20,000,000,000USD"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
 
         <!--Card 6-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -98,7 +174,21 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             >
-        </android.support.v7.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mona" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="46dp"
+                android:layout_height="177dp"
+                android:text="700,000,000USD"
+                android:translationX="150dp"
+                android:translationY="50dp" />
+        </androidx.cardview.widget.CardView>
 
     </GridLayout>
 
