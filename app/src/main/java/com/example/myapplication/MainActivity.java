@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button startB = findViewById(R.id.startButton);
         Button load = findViewById(R.id.loadGame);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.play_music);
         startB.setOnClickListener(unused -> {
             Intent intent = new Intent(MainActivity.this, PickPerson.class);
             startActivity(intent);
+            mp.start();
         });
         load.setOnClickListener(unused -> {
             Intent intent = new Intent(MainActivity.this, loadGame.class);

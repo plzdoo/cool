@@ -63,4 +63,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32999998" />
 
+    <dependency android:id="@+id/dependency">
+
+        <groupId>pl.droidsonroids.gif</groupId>
+
+        <artifactId>android-gif-drawable</artifactId>
+
+        <version>insert latest version here</version>
+
+        <type>aar</type>
+    </dependency>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
