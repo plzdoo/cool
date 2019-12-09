@@ -9,44 +9,34 @@
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
         android:text="START"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/loadGame"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/quitGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/loadGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="sendMessage1"
-        android:text="LOAD"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/quitGame"
-        app:layout_constraintEnd_toEndOf="@+id/startButton"
-        app:layout_constraintTop_toBottomOf="@+id/startButton" />
-
-    <Button
         android:id="@+id/quitGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="269dp"
+        android:layout_width="151dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="181dp"
         android:text="QUIT"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/loadGame"
-        app:layout_constraintTop_toBottomOf="@+id/loadGame" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="202dp"
-        android:layout_height="169dp"
-        android:layout_marginTop="169dp"
-        android:layout_marginBottom="9dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="79dp"
         android:gravity="center"
         android:text="BUY YOU AN ASS"
         android:textAllCaps="false"
@@ -55,12 +45,11 @@
         android:textSize="36sp"
         android:textStyle="bold"
         android:translationX="0dp"
-        android:translationY="-100dp"
+        android:translationY="0dp"
         app:layout_constraintBottom_toTopOf="@+id/startButton"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
