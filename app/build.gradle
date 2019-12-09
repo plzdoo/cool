@@ -31,9 +31,14 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
-    implementation files('/Users/liangyiming/Downloads/android-gif-drawable-1.2.19-javadoc.jar')
-    implementation files('/Users/liangyiming/Downloads/android-gif-drawable-1.2.19-sources.jar')
-    implementation files('/Users/liangyiming/Downloads/android-gif-drawable-1.2.19.aar')
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+
+    //implementation files('/Users/liangyiming/Downloads/android-gif-drawable-1.2.19-javadoc.jar')
+    //implementation files('/Users/liangyiming/Downloads/android-gif-drawable-1.2.19.aar')
+    //implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+
+
+
 }
