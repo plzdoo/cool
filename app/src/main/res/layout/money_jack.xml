@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/jackma" />
+            android:src="@drawable/jackma" />
 
         <TextView
             android:id="@+id/moneyBox"
@@ -39,7 +39,7 @@
         android:columnOrderPreserved="false">
         <!--Card 1-->
         <androidx.cardview.widget.CardView
-            android:layout_width="164dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -51,7 +51,7 @@
                 android:id="@+id/lam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/lambo" />
+                android:src="@drawable/lambo" />
 
             <TextView
                 android:id="@+id/cost1"
@@ -64,7 +64,7 @@
 
         <!--Card 2-->
         <androidx.cardview.widget.CardView
-            android:layout_width="182dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -74,13 +74,13 @@
 
             <ImageButton
                 android:id="@+id/imageButton5"
-                android:layout_width="200dp"
-                android:layout_height="143dp"
-                app:srcCompat="@drawable/richmille" />
+                android:layout_width="wrap_content"
+                android:layout_height="145dp"
+                android:src="@drawable/richmille" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="120,000,000USD"
                 android:translationX="0dp"
@@ -89,20 +89,20 @@
 
         <!--Card 3-->
         <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_marginStart="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
             >
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
+                android:layout_width="144dp"
                 android:layout_height="144dp"
-                app:srcCompat="@drawable/manor" />
+                android:src="@drawable/manor" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -117,20 +117,20 @@
 
         <!--Card 5-->
         <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp">
 
             <ImageButton
                 android:id="@+id/imageButton9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/diomond" />
+                android:layout_height="145dp"
+                android:src="@drawable/diomond" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -141,20 +141,20 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
             >
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
+                android:layout_width="107dp"
                 android:layout_height="120dp"
-                app:srcCompat="@drawable/blizzard" />
+                android:src="@drawable/blizzard" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -166,12 +166,12 @@
 
         <!--Card 6-->
         <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+            android:layout_width="82dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
             >
 
@@ -189,6 +189,8 @@
                 android:translationX="150dp"
                 android:translationY="50dp" />
         </androidx.cardview.widget.CardView>
+
+
 
     </GridLayout>
 

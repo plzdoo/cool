@@ -15,16 +15,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button startB = findViewById(R.id.startButton);
+<<<<<<< HEAD
         Button load = findViewById(R.id.loadGame);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.play_music);
+=======
+>>>>>>> a3a48a683553924fd302e73b2b30f8040ebcd365
         startB.setOnClickListener(unused -> {
             Intent intent = new Intent(MainActivity.this, PickPerson.class);
             startActivity(intent);
             mp.start();
-        });
-        load.setOnClickListener(unused -> {
-            Intent intent = new Intent(MainActivity.this, loadGame.class);
-            startActivity(intent);
         });
         Button exit = findViewById(R.id.quitGame);
         exit.setOnClickListener(new View.OnClickListener() {
