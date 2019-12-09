@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -19,16 +18,17 @@ public class jackMoney extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.money_jack);
         TextView mp = findViewById(R.id.moneyBox);
-        mp.setText(jackMoney);
-
-        ImageButton lam = findViewById(R.id.imageButton2);
+        if (mp != null) {
+            mp.setText(jackMoney);
+        }
+        ImageButton lam = findViewById(R.id.lam);
         ImageButton richi = findViewById(R.id.imageButton5);
         ImageButton manor = findViewById(R.id.imageButton6);
         ImageButton diamond = findViewById(R.id.imageButton9);
         ImageButton blizzard = findViewById(R.id.imageButton7);
         ImageButton mona = findViewById(R.id.imageButton8);
-        setContentView(R.layout.new_shit);
         if (jackMoney < 0) {
             lam.setClickable(false);
             richi.setClickable(false);
@@ -37,25 +37,29 @@ public class jackMoney extends AppCompatActivity {
             blizzard.setClickable(false);
             mona.setClickable(false);
         }
+        if (lam != null && richi != null && manor != null && diamond != null
+                && blizzard != null && mona != null) {
 
-        lam.setOnClickListener(unused -> {
-            jackMoney -= lam1;
-        });
-        richi.setOnClickListener(unused -> {
-            jackMoney -= richi1;
-        });
-        manor.setOnClickListener(unused -> {
-            jackMoney -= manor1;
-        });
-        diamond.setOnClickListener(unused -> {
-            jackMoney -= diamond1;
-        });
-        blizzard.setOnClickListener(unused -> {
-            jackMoney -= blizzard1;
-        });
-        mona.setOnClickListener(unused -> {
-            jackMoney -= mona1;
-        });
+            lam.setOnClickListener(unused -> {
+                jackMoney -= lam1;
+            });
+
+            richi.setOnClickListener(unused -> {
+                jackMoney -= richi1;
+            });
+            manor.setOnClickListener(unused -> {
+                jackMoney -= manor1;
+            });
+            diamond.setOnClickListener(unused -> {
+                jackMoney -= diamond1;
+            });
+            blizzard.setOnClickListener(unused -> {
+                jackMoney -= blizzard1;
+            });
+            mona.setOnClickListener(unused -> {
+                jackMoney -= mona1;
+            });
+        }
 
 
 

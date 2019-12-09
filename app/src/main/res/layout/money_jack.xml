@@ -48,7 +48,7 @@
             android:layout_marginBottom="16dp">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/lam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/lambo" />
