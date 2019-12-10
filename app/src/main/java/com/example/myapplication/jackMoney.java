@@ -26,18 +26,15 @@ public class jackMoney extends AppCompatActivity {
         ImageButton diamond = findViewById(R.id.imageButton9);
         ImageButton blizzard = findViewById(R.id.imageButton7);
         ImageButton mona = findViewById(R.id.imageButton8);
-<<<<<<< HEAD
         if (jackMoney < 0) {
-            lam.setClickable(false);
-            richi.setClickable(false);
-            manor.setClickable(false);
-            diamond.setClickable(false);
             blizzard.setClickable(false);
+            lam.setClickable(false);
             mona.setClickable(false);
+            mp.setText("I've gone bankrupt!");
+        } else {
+            mp.setText(String.valueOf(jackMoney));
         }
 
-=======
->>>>>>> a3a48a683553924fd302e73b2b30f8040ebcd365
         if (lam != null && richi != null && manor != null && diamond != null
                 && blizzard != null && mona != null) {
 
@@ -46,48 +43,62 @@ public class jackMoney extends AppCompatActivity {
                     lam.setClickable(false);
                     mp.setText("I've gone bankrupt!");
                 }
+                if (jackMoney - lam1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
+                }
                 jackMoney -= lam1;
-<<<<<<< HEAD
-
-=======
-                mp.setText(String.valueOf(jackMoney));
->>>>>>> a3a48a683553924fd302e73b2b30f8040ebcd365
             });
 
             richi.setOnClickListener(unused -> {
                 if (jackMoney < 0) {
                     richi.setClickable(false);
+                    mp.setText("I've gone bankrupt!");
+                }
+                if (jackMoney - richi1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
                 }
                 jackMoney -= richi1;
-                mp.setText(String.valueOf(jackMoney));
             });
             manor.setOnClickListener(unused -> {
                 if (jackMoney < 0) {
                     manor.setClickable(false);
+                    mp.setText("I've gone bankrupt!");
+                }
+                if (jackMoney - manor1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
                 }
                 jackMoney -= manor1;
-                mp.setText(String.valueOf(jackMoney));
             });
             diamond.setOnClickListener(unused -> {
                 if (jackMoney < 0) {
                     diamond.setClickable(false);
+                    mp.setText("I've gone bankrupt!");
+                }
+                if (jackMoney - diamond1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
                 }
                 jackMoney -= diamond1;
-                mp.setText(String.valueOf(jackMoney));
             });
             blizzard.setOnClickListener(unused -> {
-                if (jackMoney - blizzard1 < 0) {
+                if (jackMoney < 0) {
                     blizzard.setClickable(false);
+                    mp.setText("I've gone bankrupt!");
+                }
+                if (jackMoney - blizzard1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
                 }
                 jackMoney -= blizzard1;
-                mp.setText(String.valueOf(jackMoney));
+
             });
             mona.setOnClickListener(unused -> {
-                if (jackMoney < 0) {
+                if (jackMoney - mona1 < 0) {
                     mona.setClickable(false);
+                    mp.setText("I've gone bankrupt!");
+                }
+                if (jackMoney - mona1 > 0) {
+                    mp.setText(String.valueOf(jackMoney));
                 }
                 jackMoney -= mona1;
-                mp.setText(String.valueOf(jackMoney));
             });
         }
 
@@ -95,11 +106,6 @@ public class jackMoney extends AppCompatActivity {
 
 
     }
-    public boolean bankup() {
-        if (jackMoney - lam1 < 0) {
-            return false;
-        } else if (jackMoney
-        return true;
-    }
+
 
 }

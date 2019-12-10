@@ -48,10 +48,10 @@
         android:textColor="#E5E1EC"
         android:textSize="36sp" />
 
-    <pl.droidsonroids.gif.GifImageView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/thuglife"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/thuglife"/>
 
 </LinearLayout>

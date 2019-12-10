@@ -52,15 +52,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <dependency android:id="@+id/dependency">
 
-        <groupId>pl.droidsonroids.gif</groupId>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <artifactId>android-gif-drawable</artifactId>
-
-        <version>insert latest version here</version>
-
-        <type>aar</type>
-    </dependency>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
