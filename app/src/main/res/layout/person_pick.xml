@@ -46,12 +46,14 @@
         android:layout_height="50dp"
         android:text="choose one billionaire you like!!"
         android:textColor="#E5E1EC"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:translationY="-100dp" />
 
     <ImageView
+        android:id="@+id/thuglife"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/thuglife"/>
+        android:translationY="-50dp" />
 
 </LinearLayout>

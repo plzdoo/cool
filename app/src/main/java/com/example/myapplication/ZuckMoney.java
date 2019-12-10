@@ -7,13 +7,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ZuckMoney extends AppCompatActivity {
-    private long jackMoney = 415700000;
-    private int lam1 = 2000;
-    private int richi1 = 1200000;
-    private int manor1 = 1000000;
-    private int diamond1 = 500;
-    private int blizzard1 = 200000000;
-    private int mona1 = 7000000;
+    private long jackMoney = 74500000000L;
+    private int lam1 = 200000;
+    private int richi1 = 120000000;
+    private int manor1 = 100000000;
+    private int diamond1 = 50000;
+    private long blizzard1 = 20000000000L;
+    private long mona1 = 70000000000L;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

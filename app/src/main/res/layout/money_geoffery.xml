@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".geofferyMoney"
+    android:background="@drawable/back1"
     >
 
     <RelativeLayout
@@ -26,6 +27,7 @@
             android:layout_width="152dp"
             android:layout_height="136dp"
             android:text="TextView"
+            android:textSize="36sp"
             android:translationX="235dp"
             android:translationY="0dp" />
     </RelativeLayout>

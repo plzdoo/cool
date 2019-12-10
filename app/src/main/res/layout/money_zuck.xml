@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".geofferyMoney"
+    android:background="@drawable/back2"
     >
 
     <RelativeLayout
@@ -58,8 +59,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:text="200,000 USD"
-                android:translationX="0dp"
-                android:translationY="150dp" />
+                android:translationX="30dp"
+                android:translationY="130dp" />
         </androidx.cardview.widget.CardView>
 
         <!--Card 2-->
@@ -75,7 +76,7 @@
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
-                android:layout_height="145dp"
+                android:layout_height="120dp"
                 android:src="@drawable/richmille" />
 
             <TextView
@@ -83,8 +84,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="120,000,000USD"
-                android:translationX="0dp"
-                android:translationY="150dp" />
+                android:translationX="30dp"
+                android:translationY="130dp" />
         </androidx.cardview.widget.CardView>
 
         <!--Card 3-->
@@ -100,7 +101,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="144dp"
+                android:layout_width="match_parent"
                 android:layout_height="144dp"
                 android:src="@drawable/manor" />
 
@@ -109,8 +110,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="100,000,000USD"
-                android:translationX="0dp"
-                android:translationY="150dp" />
+                android:translationX="30dp"
+                android:translationY="130dp" />
         </androidx.cardview.widget.CardView>
 
         <!--Card 4-->
@@ -137,7 +138,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="50,000USD"
-                android:translationY="150dp" />
+                android:translationX="30dp"
+                android:translationY="130dp" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -152,7 +154,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="107dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:src="@drawable/blizzard" />
 
@@ -161,7 +163,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"
                 android:text="20,000,000,000USD"
-                android:translationY="150dp" />
+                android:translationX="30dp"
+                android:translationY="130dp" />
         </androidx.cardview.widget.CardView>
 
         <!--Card 6-->
@@ -186,8 +189,8 @@
                 android:layout_width="46dp"
                 android:layout_height="177dp"
                 android:text="700,000,000USD"
-                android:translationX="150dp"
-                android:translationY="50dp" />
+                android:translationX="130dp"
+                android:translationY="30dp" />
         </androidx.cardview.widget.CardView>
 
 
